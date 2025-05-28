@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DELLAYLEESH</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--mt style-->
+  </head>
+
+  <body>
+    <!--navbar start-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">DELLAY<span>LEESH</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang kami</a>
+        <a href="#menu">Product</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#contact">Kontak</a>
+        
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- search form star -->
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here ..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- search form end -->
+
+      <!--shoping cart start-->
+      <div class="shopping-cart"></div>
+      <!--shoping cart end-->
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1><span>DELLAYLEESH</span></h1>
+        <p>
+          Dosen : Anak Agung Gede Darma Jata, S.E.,M.M.</p>
+        </p>
+        <p>DELA PUSPITA</p>
+        <p>231090550411</p>
+        <p>PRAKTEK KOMPUTER BISNIS</p>
+        <p>Tampil keren dan percaya diri dengan koleksi sendal kekinian kami</p>
+      </main>
+    </section>
+
+    <!-- Hero section end -->
+
+    <!-- About section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/1.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih sepatu dari DELLAYLEESH?</h3>
+          <p>
+            DELLAYLEESH adalah brand sepatu wanita yang hadir untuk kamu yang
+            ingin tampil stylish, percaya diri, dan tetap nyaman di setiap
+            langkah. Kami percaya bahwa sepatu bukan hanya pelengkap penampilan,
+            tetapi juga bagian penting yang mencerminkan karakter dan gaya hidup
+            setiap wanita.
+          </p>
+          <p>
+            Dengan mengusung desain eksklusif dan material berkualitas tinggi,
+            DELLAYLEESH menghadirkan berbagai pilihan model mulai dari casual,
+            semi-formal, hingga formal. Setiap koleksi dirancang dengan detail
+            yang memperhatikan estetika, kenyamanan, dan tren terkini—menjadikan
+            kamu tampil menawan tanpa mengorbankan rasa nyaman.
+          </p>
+          <p>
+            Kami memahami bahwa setiap wanita memiliki gaya yang unik. Karena
+            itu, DELLAYLEESH selalu menghadirkan koleksi terbaru yang
+            fashionable, versatile, dan mudah dipadupadankan dengan outfit
+            harianmu. Cocok digunakan untuk kuliah, kerja, hangout, travelling,
+            hingga acara-acara spesial yang membutuhkan sentuhan elegan.
+          </p>
+          <p>
+            DELLAYLEESH bukan sekadar sepatu, tapi sebuah pernyataan gaya yang
+            dirancang khusus untuk kamu yang aktif, berani tampil beda, dan
+            selalu ingin tampil terbaik dalam setiap kesempatan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section end -->
+
+    <!-- menu section start -->
+    <section id="menu" class="menu">
+      <h2><span>Koleksi</span> Kami :</h2>
+      <p></p>
+
+      <div class="row">
+        <!-- Contoh 1 -->
+        <div class="menu-card">
+          <img src="img/1.jpg" alt="Mochi Strawberry" class="menu-card-img" />
+          <h3 class="menu-card-tittle">HEELS PESTA DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 500.000</p>
+          <button
+            onclick="addToCart('HEELS PESTA DELLAYLEESH', 'img/1.jpg', 'IDR 500.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <!-- Contoh 2 -->
+        <div class="menu-card">
+          <img src="img/2.jpg" alt="Mochi Coklat" class="menu-card-img" />
+          <h3 class="menu-card-tittle">PANTOFEL KERJA DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 450.000</p>
+          <button
+            onclick="addToCart('PANTOFEL KERJA DELLAYLEESH', 'img/2.jpg', 'IDR 450.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <!-- Ulangi pola yang sama -->
+        <div class="menu-card">
+          <img src="img/3.jpg" alt="Mochi Matcha" class="menu-card-img" />
+          <h3 class="menu-card-tittle">NAURA HEELS DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 350.000</p>
+          <button
+            onclick="addToCart('NAURA HEELS DELLAYLEESH', 'img/3.jpg', 'IDR 350.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/4.jpg" alt="Mochi Mango" class="menu-card-img" />
+          <h3 class="menu-card-tittle">HEELS MORRYMODIS DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 200.000</p>
+          <button
+            onclick="addToCart('HEELS MORRYMODIS DELLAYLEESH', 'img/4.jpg', 'IDR 200.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/5.jpg" alt="Mochi Blueberry" class="menu-card-img" />
+          <h3 class="menu-card-tittle">HEELS CHANEL DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 700.000</p>
+          <button
+            onclick="addToCart('HEELS CHANEL DELLAYLEESH', 'img/5.jpg', 'IDR 700.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/6.jpg" alt="Mochi Vanilla" class="menu-card-img" />
+          <h3 class="menu-card-tittle">HEELS YANDA DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 100.000K</p>
+          <button
+            onclick="addToCart('HEELS YANDA DELLAYLEESH', 'img/6.jpg', 'IDR 100.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/7.jpg" alt="Mochi Peach" class="menu-card-img" />
+          <h3 class="menu-card-tittle">HEELS PRIMA DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 450.000</p>
+          <button
+            onclick="addToCart('HEELS PRIMA DELLAYLEESH', 'img/7.jpg', 'IDR 450.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/8.jpg" alt="Mochi Pandan" class="menu-card-img" />
+          <h3 class="menu-card-tittle">HEELS FLD DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 550.000</p>
+          <button
+            onclick="addToCart('HEELS FLD DELLAYLEESH', 'img/8.jpg', 'IDR 550.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/9.jpg" alt="Mochi Durian" class="menu-card-img" />
+          <h3 class="menu-card-tittle">HEELS SEPASANG DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 300.000</p>
+          <button
+            onclick="addToCart('HEELS SEPASANG DELLAYLEESH', 'img/9.jpg', 'IDR 300.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/10.jpg" alt="Mochi Taro" class="menu-card-img" />
+          <h3 class="menu-card-tittle">HEELS CHRISLOTELLI DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 250.000</p>
+          <button
+            onclick="addToCart('HEELS CHRISLOTELLI DELLAYLEESH', 'img/10.jpg', 'IDR 250.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/11.jpg" alt="Mochi Cheese" class="menu-card-img" />
+          <h3 class="menu-card-tittle">HEELS ANNABLE DELLAYLEESH</h3>
+          <p class="menu-card-price">IDR 350.000</p>
+          <button
+            onclick="addToCart('HEELS ANNABLE DELLAYLEESH', 'img/11.jpg', 'IDR 350.000')"
+          >
+            + Keranjang
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- menu section end -->
+
+    <!--produk section star-->
+
+    <!-- Testimoni Section Start -->
+    <section id="testimoni" class="testimoni">
+      <h2><span>Testimoni</span> Pelanggan</h2>
+      <div class="row">
+        <div class="testimoni-card">
+          <img src="img/2.jpg" alt="Testimoni 1" />
+          <p>
+            "Warnanya elegan banget dan sesuai foto. Tumitnya stabil, jadi aku
+            percaya diri banget jalan pakai ini di event kampus."
+          </p>
+          <h4>- Siti Nurhaliza</h4>
+        </div>
+        <div class="testimoni-card">
+          <img src="img/3.jpg" alt="Testimoni 2" />
+          <p>
+            "Aku suka banget sama desainnya yang simpel tapi classy. Cocok
+            banget buat acara formal maupun semi-formal."
+          </p>
+          <h4>- sarah</h4>
+        </div>
+        <div class="testimoni-card">
+          <img src="img/4.jpg" alt="Testimoni 3" />
+          <p>
+            ""Modelnya elegan banget dan gampang dipadu-padankan sama outfit apa
+            aja. Pas dipakai kondangan, banyak yang nanya beli di mana!""
+          </p>
+          <h4>- Ibu Yanti</h4>
+        </div>
+        <div class="testimoni-card">
+          <img src="img/5.jpg" alt="Testimoni 3" />
+          <p>
+            ""Aku punya kaki yang agak sensitif, jadi biasanya susah cari sandal
+            yang cocok. Tapi sandal dari sini benar-benar nyaman dan empuk!" "
+          </p>
+          <h4>- Ibu Retno</h4>
+        </div>
+      </div>
+    </section>
+    <!-- Testimoni Section End -->
+
+    <!--produk section end-->
+
+    <!--contact section start-->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p></p>
+
+      <div class="row">
+        <!-- Google Maps -->
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.5271194133317!2d106.27622257478945!3d-6.12813399386063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e422f8e364e4051%3A0x142be21270013cbf!2sCiruas%2C%20Kec.%20Ciruas%2C%20Kabupaten%20Serang%2C%20Banten!5e0!3m2!1sid!2sid!4v1716793612031!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          style="flex: 1 1 45rem; height: 300px; border: 0;"
+        ></iframe>
+      
+        <!-- YouTube Video -->
+        <div style="flex: 1 1 45rem; padding: 1rem;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TOI5oTAUfKs?si=hMJfJitv9R5ExUXV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+    </section>
+    <!--contact section end-->
+
+    <!--footer start-->
+    <!--contact section start-->
+    <section id="contact" class="contact">
+      <h2><span>Hubungi</span> Kami</h2>
+      <p>Kami siap melayani Anda melalui media sosial berikut:</p>
+
+      <div class="sosmed-links">
+        <a href="https://wa.me/628561109050" target="_blank" class="wa">
+          <i data-feather="phone"></i> WhatsApp
+        </a>
+        <a href="https://instagram.com/dellayleesh_" target="_blank" class="ig">
+          <i data-feather="instagram"></i> Instagram
+        </a>
+        <a href="https://youtube.com/shorts/kDjjfkpUPs8?si=ogImtQMwMQcnmdu5" target="_blank" class="yt">
+          <i data-feather="youtube"></i> YouTube
+        </a>
+      </div>
+    </section>
+    <!--contact section end-->
+
+    <!--footer end-->
+
+    <script>
+      feather.replace();
+    </script>
+    <!-- My javascript -->
+    <script src="can.js"></script>
+    <script>
+      function addToCart(name, img, price) {
+        const cart = document.querySelector(".shopping-cart");
+        const item = document.createElement("div");
+        item.classList.add("cart-item");
+        item.innerHTML = `
+      <img src="${img}" alt="${name}" />
+      <div class="item-deatil">
+        <h3>${name}</h3>
+        <div class="item-price">${price}</div>
+      </div>
+      <i data-feather="trash-2" class="remove-item" onclick="this.parentElement.remove()"></i>
+    `;
+        cart.appendChild(item);
+        feather.replace(); // refresh feather icon
+      }
+    </script>
+  </body>
+</html>
